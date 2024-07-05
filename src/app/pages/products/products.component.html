@@ -1,0 +1,19 @@
+<h2>Products list</h2>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Details</th>
+  </tr>
+  @for (product of productList; track $index) {
+  <tr>
+    <td>{{ product.id }}</td>
+    <td>{{ product.title }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.description }}</td>
+    <td><button (click)="showDetails(product.id)">Details</button></td>
+  </tr>
+  }
+</table>

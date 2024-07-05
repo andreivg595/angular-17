@@ -1,0 +1,8 @@
+@if (loading) {
+<h5>Loading...</h5>
+} @if (!loading) {
+<h3>{{ product?.title }}</h3>
+<p>{{ product?.description }}</p>
+<p>{{ product?.price }}</p>
+<p>{{ product?.category }}</p>
+}
